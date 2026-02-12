@@ -34,7 +34,12 @@ export default function HeartDashboard({ openSection, exit }) {
 
 
     return (
-        <div className="relative w-full h-screen flex items-center justify-center overflow-hidden text-white">
+        <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1.2, ease: "easeOut" }}
+            className="relative w-full h-screen flex items-center justify-center overflow-hidden text-white"
+        >
 
             {/* 🌌 Background */}
             <div
@@ -175,6 +180,6 @@ export default function HeartDashboard({ openSection, exit }) {
                     </div>
                 </div>
             </motion.div>
-        </div>
+        </motion.div>
     );
 }

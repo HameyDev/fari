@@ -89,7 +89,13 @@ export default function Memories({ next, back }) {
   }, []);
 
   return (
-    <div className="relative w-full h-screen flex flex-col items-center justify-start p-4 sm:p-6 overflow-hidden text-white">
+    <motion.div
+      initial={{ opacity: 0, scale: 1.03, filter: "blur(6px)" }}
+      animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
+      transition={{ duration: 1.2, ease: "easeOut" }}
+      className="relative w-full h-screen flex flex-col items-center justify-start p-4 sm:p-6 overflow-hidden text-white"
+    >
+
 
       {/* Background */}
       <div
@@ -268,6 +274,6 @@ export default function Memories({ next, back }) {
         )}
       </AnimatePresence>
 
-    </div>
+    </motion.div>
   );
 }

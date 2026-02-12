@@ -8,7 +8,6 @@ import LoveLetter from "./components/LoveLetter";
 import Memories from "./components/Memories";
 import Promises from "./components/Promises";
 import Destiny from "./components/Destiny";
-import FloatingHearts from "./components/FloatingHearts";
 import HeartDashboard from "./components/HeartDashboard";
 
 
@@ -22,8 +21,7 @@ export default function App() {
   return (
     <div className="relative w-full h-screen overflow-hidden bg-darkbg">
 
-      {/* Floating hearts behind everything */}
-      <FloatingHearts />
+      
 
       {/* Music player (can be fixed or absolute) */}
       <MusicPlayer />
