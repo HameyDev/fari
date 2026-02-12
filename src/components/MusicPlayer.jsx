@@ -6,7 +6,7 @@ export default function MusicPlayer() {
     const sound = new Howl({
       src: ["/music.mp3"],
       loop: true,
-      volume: 0.4,
+      volume: 0.8,
       autoplay: true,
     });
 

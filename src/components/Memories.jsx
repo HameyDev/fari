@@ -48,7 +48,7 @@ export default function Memories({ next, back }) {
     ],
   };
 
-  const [activeSection, setActiveSection] = useState("first");
+  const [activeSection, setActiveSection] = useState("dream");
   const [startIndex, setStartIndex] = useState(0);
   const [selectedImg, setSelectedImg] = useState(null);
 
