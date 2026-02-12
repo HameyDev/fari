@@ -7,7 +7,7 @@ export default function Memories({ next, back }) {
   const sections = [
     { id: "first", label: "First" },
     { id: "cute", label: "Cute" },
-    { id: "funny", label: "Funny" },
+    { id: "dream", label: "Dream" },
     { id: "fav", label: "Fav" },
   ];
   const containerRef = useRef(null);
@@ -26,11 +26,19 @@ export default function Memories({ next, back }) {
       { src: "/memories/cute/1.jpg", caption: "Laughing together" },
       { src: "/memories/cute/2.jpg", caption: "Sweet smile" },
     ],
-    funny: [
-      { src: "/memories/funny/1.jpg", caption: "We laughed 😂" },
-      { src: "/memories/funny/2.jpg", caption: "Silly faces" },
-      { src: "/memories/funny/3.jpg", caption: "Crazy moments" },
-      { src: "/memories/funny/4.jpg", caption: "Inside joke" },
+    dream: [
+      { src: "/memories/dreams/1.png", caption: "Kissing Hand" },
+      { src: "/memories/dreams/2.png", caption: "Holding hand" },
+      { src: "/memories/dreams/9.png", caption: "Putting in Hands" },
+      { src: "/memories/dreams/10.png", caption: "Loving" },
+      { src: "/memories/dreams/8.png", caption: "Giving Flowers" },
+      { src: "/memories/dreams/3.png", caption: "Giving Flowers" },
+      { src: "/memories/dreams/4.png", caption: "Caring" },
+      { src: "/memories/dreams/5.png", caption: "Promise" },
+      { src: "/memories/dreams/6.png", caption: "My Love" },
+      { src: "/memories/dreams/7.png", caption: "Giving Love Letter" },
+      
+      
     ],
     fav: [
       { src: "/memories/fav/1.jpg", caption: "My heart ❤️" },
@@ -176,7 +184,7 @@ export default function Memories({ next, back }) {
                 className="flex gap-4"
                 initial={{ opacity: 0 }}
                 animate={{
-                  x: `-${startIndex * (106 / visibleCount)}%`,
+                  x: `-${startIndex * (106.5 / visibleCount)}%`,
                   opacity: 1,
                 }}
                 exit={{ opacity: 0 }}
@@ -187,7 +195,7 @@ export default function Memories({ next, back }) {
                     key={img.src}
                     className="
             flex-shrink-0 w-full sm:w-[48%] md:w-[31%] lg:w-[23.5%]
-            rounded-xl overflow-hidden cursor-pointer relative
+            rounded-xl bg-white overflow-hidden cursor-pointer relative
             group
           "
                     onClick={() => setSelectedImg(img)}
@@ -197,11 +205,9 @@ export default function Memories({ next, back }) {
                       src={img.src}
                       alt={img.caption}
                       className="
-              w-full h-64 object-cover rounded-xl
+              w-full h-70 object-cover rounded-xl
               transition-all duration-400
               group-hover:scale-[1.05]
-              shadow-[0_0_18px_rgba(255,105,135,0.35)]
-              group-hover:shadow-[0_0_35px_rgba(255,105,135,0.65)]
             "
                     />
 
