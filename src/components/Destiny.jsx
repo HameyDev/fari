@@ -93,14 +93,14 @@ export default function Destiny({ next, back }) {
         animate={{ opacity: 1, y: 0, scale: 1 }}
         exit={{ opacity: 0 }}
         transition={{ duration: 1.2, ease: "easeOut" }}
-        className="relative z-10 w-full max-w-[900px] h-[70vh] sm:h-[85vh] flex flex-col px-6 sm:px-10 py-6 sm:py-10 bg-white/5 backdrop-blur-md border border-white/10 rounded-3xl shadow-[0_0_80px_rgba(255,105,135,0.3)]"
+        className="relative z-10 w-full max-w-[900px] h-[70vh] sm:h-[95vh] flex flex-col px-6 sm:px-10 py-6 sm:py-10 bg-white/5 backdrop-blur-md border border-white/10 rounded-3xl shadow-[0_0_80px_rgba(255,105,135,0.3)]"
       >
         {/* Title */}
         <motion.h1
           initial={{ y: -20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1 }}
-          className="text-2xl sm:text-4xl font-light text-softpink drop-shadow-[0_0_15px_rgba(255,182,193,0.7)] text-center mb-6"
+          className="text-2xl sm:text-3xl font-light text-softpink drop-shadow-[0_0_15px_rgba(255,182,193,0.7)] text-center mb-6"
         >
           Our Destiny
         </motion.h1>
@@ -109,7 +109,7 @@ export default function Destiny({ next, back }) {
           className="absolute sm:ml-0 sm:mb-28 mb-[80px] ml-2 inset-0 z-50 bg-no-repeat"
           style={{
             backgroundImage: "url('/pic-6.png')",
-            backgroundSize: isMobile ? "120px 210px" : "250px 370px",
+            backgroundSize: isMobile ? "120px 210px" : "210px 320px",
             backgroundPosition: "bottom left",
             // rose-400 glow from bottom
             filter: "brightness(0.82) drop-shadow(0 15px 15px rgba(244, 114, 182, 0.1))", // subtle glow
@@ -131,7 +131,7 @@ export default function Destiny({ next, back }) {
           className="absolute sm:mr-6 sm:mb-[120px] mb-[85px] mr-6 inset-0 z-50 bg-no-repeat"
           style={{
             backgroundImage: "url('/pic-7.png')",
-            backgroundSize: isMobile ? "120px 180px" : "230px 320px",
+            backgroundSize: isMobile ? "120px 180px" : "200px 290px",
             backgroundPosition: "bottom right",
 
             filter: "brightness(0.82) drop-shadow(0 20px 15px rgba(244, 114, 182, 0.1))", // subtle glow
@@ -150,14 +150,14 @@ export default function Destiny({ next, back }) {
         />
 
         {/* Text Box */}
-        <div className="flex-1 overflow-y-auto p-4 sm:p-6 rounded-2xl bg-white/5 backdrop-blur-sm shadow-[0_0_50px_rgba(255,105,135,0.25)] text-left text-rose-100">
+        <div className="flex-1 overflow-y-auto p-4 sm:p-4 rounded-2xl bg-white/5 backdrop-blur-sm shadow-[0_0_50px_rgba(255,105,135,0.25)] text-left text-rose-100">
           {displayedLines.map((line, i) => (
             <motion.p
               key={i}
               initial={{ opacity: 0, y: 18 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="mb-3 text-xs sm:text-base md:text-lg leading-relaxed tracking-wide text-center"
+              className="mb-3 text-xs sm:text-base md:text-sm leading-relaxed tracking-wide text-center"
             >
               {line || <span className="opacity-0">.</span>}
             </motion.p>

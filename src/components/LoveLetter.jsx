@@ -4,8 +4,7 @@ import { motion } from "framer-motion";
 import { FaEnvelope } from "react-icons/fa";
 
 export default function LoveLetter({ next, exit }) {
-  const fullText = `
-Laiba…
+  const fullText = `Laiba…
 
 From the moment you came into my life, everything changed.
 
@@ -21,7 +20,7 @@ you are my home,
 my dua,
 my forever.
 
-— Hamey ❤️`;
+Hamey ❤️`;
 
   const [displayedText, setDisplayedText] = useState("");
   const [index, setIndex] = useState(0);
@@ -98,11 +97,11 @@ my forever.
         animate={{ opacity: 1, y: 0, scale: 1 }}
         exit={{ opacity: 0 }}
         transition={{ duration: 1.2, ease: "easeOut" }}
-        className="relative z-40 w-full max-w-[1000px] h-[85vh] sm:h-[90vh] flex flex-col px-6 sm:px-10 py-6 sm:py-10 bg-white/5 backdrop-blur-md border border-white/10 rounded-3xl shadow-[0_0_80px_rgba(255,105,135,0.3)]"
+        className="relative z-40 w-full max-w-[800px] h-[85vh] sm:h-[90vh] flex flex-col px-6 sm:px-10 py-6 sm:py-10 bg-white/5 backdrop-blur-md border border-white/10 rounded-3xl shadow-[0_0_80px_rgba(255,105,135,0.3)]"
       >
         {/* Header */}
         <div className="flex items-center justify-center mb-6 gap-3 flex-shrink-0">
-          <h1 className="text-xl sm:text-4xl font-light text-softpink drop-shadow-[0_0_15px_rgba(255,182,193,0.7)] tracking-wide text-center">
+          <h1 className="text-xl sm:text-2xl font-light text-softpink drop-shadow-[0_0_15px_rgba(255,182,193,0.7)] tracking-wide text-center">
             A Letter From My Heart
           </h1>
           <FaEnvelope className="text-2xl sm:text-3xl text-rose-400 drop-shadow-[0_0_15px_rgba(255,105,135,0.8)]" />
@@ -112,7 +111,7 @@ my forever.
           className="absolute sm:mr-24 mr-4 sm:mb-28 mb-16 inset-0 z-20 bg-no-repeat"
           style={{
             backgroundImage: "url('/pic-3.png')",
-            backgroundSize: isMobile ? "180px 300px" : "300px 470px",
+            backgroundSize: isMobile ? "180px 300px" : "250px 400px",
             backgroundPosition: "bottom right",
 
             filter: "brightness(0.82) drop-shadow(0 20px 15px rgba(244, 114, 182, 0.1))", // subtle glow
@@ -132,7 +131,7 @@ my forever.
 
         {/* Scrollable Typewriter Box */}
         <div
-          className="flex-1 overflow-y-auto p-4 sm:p-6 rounded-2xl bg-white/5 backdrop-blur-md shadow-[0_0_50px_rgba(255,105,135,0.25)] text-left whitespace-pre-line leading-relaxed text-sm sm:text-base text-rose-100"
+          className="flex-1 overflow-y-auto p-4 sm:p-6 rounded-2xl bg-white/5 backdrop-blur-md shadow-[0_0_50px_rgba(255,105,135,0.25)] text-left whitespace-pre-line leading-relaxed text-sm sm:text-base md:text-xs text-rose-100"
           style={{
             scrollbarWidth: "thin",
             scrollbarColor: "rgba(255,105,135,0.8) transparent",

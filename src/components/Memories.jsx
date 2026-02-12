@@ -14,37 +14,40 @@ export default function Memories({ next, back }) {
 
   const data = {
     first: [
-      { src: "/memories/first/1.jpg", caption: "Our beginning 🌸" },
-      { src: "/memories/first/2.jpg", caption: "First smile" },
-      { src: "/memories/first/1.jpg", caption: "Memorable day" },
-      { src: "/memories/first/2.jpg", caption: "Together always" },
-      { src: "/memories/first/1.jpg", caption: "Our journey" },
+      { src: "/memories/first/1.jpeg", caption: "Our beginning 🌸" },
+      { src: "/memories/first/2.jpeg", caption: "First smile" },
+      { src: "/memories/first/3.jpeg", caption: "Memorable day" },
+      { src: "/memories/first/4.jpeg", caption: "Together always" },
     ],
     cute: [
-      { src: "/memories/cute/1.jpg", caption: "Cute moment 🤍" },
-      { src: "/memories/cute/2.jpg", caption: "My favorite" },
-      { src: "/memories/cute/1.jpg", caption: "Laughing together" },
-      { src: "/memories/cute/2.jpg", caption: "Sweet smile" },
+      { src: "/memories/cute/9.jpeg", caption: "Cute moment 🤍" },
+      { src: "/memories/cute/8.jpeg", caption: "My favorite" },
+      { src: "/memories/cute/5.jpeg", caption: "Laughing together" },
+      { src: "/memories/cute/4.jpeg", caption: "Sweet smile" },
+      { src: "/memories/cute/3.jpeg", caption: "Cute moment 🤍" },
+      { src: "/memories/cute/7.jpeg", caption: "My favorite" },
+      { src: "/memories/cute/8.jpeg", caption: "Laughing together" },
+      { src: "/memories/cute/2.jpeg", caption: "Sweet smile" },
+      { src: "/memories/cute/1.jpeg", caption: "Sweet smile" },
     ],
     dream: [
-      { src: "/memories/dreams/1.png", caption: "Kissing Hand" },
-      { src: "/memories/dreams/2.png", caption: "Holding hand" },
-      { src: "/memories/dreams/9.png", caption: "Putting in Hands" },
-      { src: "/memories/dreams/10.png", caption: "Loving" },
-      { src: "/memories/dreams/8.png", caption: "Giving Flowers" },
-      { src: "/memories/dreams/3.png", caption: "Giving Flowers" },
-      { src: "/memories/dreams/4.png", caption: "Caring" },
-      { src: "/memories/dreams/5.png", caption: "Promise" },
-      { src: "/memories/dreams/6.png", caption: "My Love" },
-      { src: "/memories/dreams/7.png", caption: "Giving Love Letter" },
+      { src: "/memories/dreams/1.jpeg", caption: "Putting in Hands" },
+      { src: "/memories/dreams/2.jpeg", caption: "Giving Flowers" },
+      { src: "/memories/dreams/10.jpeg", caption: "Kissing Hand" },
+      { src: "/memories/dreams/8.jpeg", caption: "Caring" },
+      { src: "/memories/dreams/3.jpeg", caption: "Promise" },
+      { src: "/memories/dreams/4.jpeg", caption: "My Love" },
+      { src: "/memories/dreams/5.jpeg", caption: "Holding Hand" },
+      { src: "/memories/dreams/6.jpeg", caption: "My Love" },
+      { src: "/memories/dreams/7.jpeg", caption: "Giving Flowers" },
       
       
     ],
     fav: [
-      { src: "/memories/fav/1.jpg", caption: "My heart ❤️" },
-      { src: "/memories/fav/2.jpg", caption: "Forever us" },
-      { src: "/memories/fav/3.jpg", caption: "Soulmate" },
-      { src: "/memories/fav/4.jpg", caption: "Eternal love" },
+      { src: "/memories/fav/1.jpeg", caption: "My heart ❤️" },
+      { src: "/memories/fav/2.jpeg", caption: "Forever us" },
+      { src: "/memories/fav/3.jpeg", caption: "Soulmate" },
+      { src: "/memories/fav/4.jpeg", caption: "Eternal love" },
     ],
   };
 
@@ -127,22 +130,22 @@ export default function Memories({ next, back }) {
       </div>
 
       {/* Transparent Card */}
-      <div className="relative z-10 w-full max-w-[1000px] h-[85%] flex flex-col items-center justify-center bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl shadow-[0_0_80px_rgba(255,105,135,0.25)] p-6 sm:p-12 mt-8">
+      <div className="relative z-10 w-full max-w-[1000px] h-[95%] sm:h-[100%] flex flex-col items-center justify-center bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl shadow-[0_0_80px_rgba(255,105,135,0.25)] p-6 sm:p-12">
 
         {/* Title */}
-        <h1 className="text-3xl sm:text-4xl font-light text-softpink drop-shadow-[0_0_15px_rgba(255,182,193,0.7)] text-center mb-6">
+        <h1 className="text-xl sm:text-2xl font-light text-softpink drop-shadow-[0_0_15px_rgba(255,182,193,0.7)] text-center mb-2">
           Our Memories
         </h1>
 
         {/* Sections */}
-        <div className="flex justify-center gap-3 flex-wrap mb-6">
+        <div className="flex justify-center gap-3 flex-wrap mb-2">
           {sections.map((sec) => (
             <motion.button
               key={sec.id}
               onClick={() => { setActiveSection(sec.id); setStartIndex(0); }}
               whileTap={{ scale: 0.95 }}
               whileHover={{ scale: 1.05 }}
-              className={`px-4 py-2 sm:px-8 sm:py-3 rounded-full font-medium capitalize text-[10px] sm:text-base transition-all duration-300
+              className={`px-4 py-2 sm:px-8 sm:py-3 rounded-full font-medium capitalize text-[10px] sm:text-base md:text-xs transition-all duration-300
                 border border-white/20 backdrop-blur-md
                 ${activeSection === sec.id
                   ? "bg-gradient-to-r from-rose-500 to-pink-400 text-white shadow-[0_0_20px_rgba(255,105,135,0.6)] hover:shadow-[0_0_30px_rgba(255,105,135,0.8)]"
@@ -155,7 +158,7 @@ export default function Memories({ next, back }) {
         </div>
 
         {/* Gallery */}
-        <div className="relative flex items-center justify-center w-full gap-4 mt-4">
+        <div className="relative flex items-center justify-center w-full gap-4 mt-2">
           {/* Left Arrow */}
           <button
             onClick={prevSlide}
@@ -205,7 +208,7 @@ export default function Memories({ next, back }) {
                       src={img.src}
                       alt={img.caption}
                       className="
-              w-full h-70 object-cover rounded-xl
+              w-full h-[292px] object-cover rounded-xl
               transition-all duration-400
               group-hover:scale-[1.05]
             "

@@ -78,14 +78,14 @@ export default function Promises({ next, back }) {
         animate={{ opacity: 1, y: 0, scale: 1 }}
         exit={{ opacity: 0 }}
         transition={{ duration: 1.2, ease: "easeOut" }}
-        className="relative sm:z-50 w-full max-w-[900px] h-[85vh] flex flex-col px-6 sm:px-10 py-6 sm:py-10 bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl shadow-[0_0_80px_rgba(255,105,135,0.3)]"
+        className="relative sm:z-50 w-full max-w-[900px] h-[90vh] flex flex-col px-6 sm:px-10 py-6 sm:py-10 bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl shadow-[0_0_80px_rgba(255,105,135,0.3)]"
       >
         {/* Title */}
         <motion.h1
           initial={{ y: -20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1 }}
-          className="text-2xl sm:text-4xl font-light text-softpink drop-shadow-[0_0_15px_rgba(255,182,193,0.7)] text-center mb-6"
+          className="text-2xl sm:text-3xl font-light text-softpink drop-shadow-[0_0_15px_rgba(255,182,193,0.7)] text-center mb-6"
         >
           My Promises To You
         </motion.h1>
@@ -93,7 +93,7 @@ export default function Promises({ next, back }) {
           className="absolute sm:ml-12 sm:mb-[90px] mb-[70px] ml-6 inset-0 z-50 bg-no-repeat"
           style={{
             backgroundImage: "url('/pic-4.png')",
-            backgroundSize: isMobile ? "170px 280px" : "240px 380px",
+            backgroundSize: isMobile ? "170px 280px" : "220px 325px",
             backgroundPosition: "bottom left",
             // rose-400 glow from bottom
             filter: "brightness(0.82) drop-shadow(0 15px 15px rgba(244, 114, 182, 0.1))", // subtle glow
@@ -115,7 +115,7 @@ export default function Promises({ next, back }) {
           className="absolute sm:mr-12 sm:mb-[90px] mb-[68px] mr-2 inset-0 z-50 bg-no-repeat"
           style={{
             backgroundImage: "url('/pic-5.png')",
-            backgroundSize: isMobile ? "170px 277px" : "270px 375px",
+            backgroundSize: isMobile ? "170px 277px" : "230px 325px",
             backgroundPosition: "bottom right",
 
             filter: "brightness(0.82) drop-shadow(0 20px 15px rgba(244, 114, 182, 0.1))", // subtle glow
@@ -141,7 +141,7 @@ export default function Promises({ next, back }) {
               initial={{ opacity: 0, y: 25 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: i * 0.35, duration: 0.6, ease: "easeOut" }}
-              className="mb-4 text-xs sm:text-base md:text-lg leading-relaxed tracking-wide"
+              className="mb-4 text-xs sm:text-base md:text-sm leading-relaxed tracking-wide"
             >
               {text}
             </motion.p>

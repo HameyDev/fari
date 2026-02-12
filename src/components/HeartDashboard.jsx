@@ -50,7 +50,7 @@ export default function HeartDashboard({ openSection, exit }) {
                 className="absolute sm:ml-12 mb-16 inset-0 z-20 bg-no-repeat"
                 style={{
                     backgroundImage: "url('/pic.png')",
-                    backgroundSize: isMobile ? "180px 270px" : "320px 500px", // 📱 vs 💻
+                    backgroundSize: isMobile ? "180px 270px" : "270px 400px", // 📱 vs 💻
                     backgroundPosition: "bottom left",
                     filter:
                         "brightness(0.82) drop-shadow(0 15px 15px rgba(244, 114, 182, 0.1))",
@@ -82,7 +82,7 @@ export default function HeartDashboard({ openSection, exit }) {
                 className="absolute sm:mr-12 mb-4 sm:mb-0 inset-0 z-20 bg-no-repeat"
                 style={{
                     backgroundImage: "url('/pic-2.png')",
-                    backgroundSize: isMobile ? "197px 350px" : "400px 600px",
+                    backgroundSize: isMobile ? "197px 350px" : "300px 500px",
                     backgroundPosition: "bottom right",
 
                     filter: "brightness(0.82) drop-shadow(0 20px 15px rgba(244, 114, 182, 0.1))", // subtle glow
@@ -142,15 +142,15 @@ export default function HeartDashboard({ openSection, exit }) {
                 transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
                 className="relative  z-50 mb-[180px] md:mb-0 flex items-center justify-center"
             >
-                <div className="relative w-[450px] sm:w-[520px] h-[420px] sm:h-[480px] flex items-center justify-center">
+                <div className="relative w-[450px] sm:w-[400px] h-[420px] sm:h-[420px]  flex items-center justify-center">
 
                     {/* 💗 Big Transparent Heart Glow */}
-                    <FaHeart className="absolute text-[500px]  sm:text-[920px] text-rose-400/20 drop-shadow-[0_0_120px_rgba(255,120,150,0.25)]" />
+                    <FaHeart className="absolute text-[500px]  sm:text-[700px] text-rose-400/20 drop-shadow-[0_0_120px_rgba(255,120,150,0.25)]" />
 
                     {/* 💎 Glass Inner Area */}
-                    <div className="relative w-[50%] h-[65%] sm:w-[78%] sm:h-[82%] sm:mb-24 mb-8 rounded-3xl backdrop-blur-sm bg-white/5 border border-white/10 shadow-[0_0_80px_rgba(255,105,135,0.25)] flex flex-col items-center justify-center px-6 py-5">
+                    <div className="relative w-[50%] h-[65%] sm:w-[78%] sm:h-[82%] sm:mb-20 mb-8 rounded-3xl backdrop-blur-sm bg-white/5 border border-white/10 shadow-[0_0_80px_rgba(255,105,135,0.25)] flex flex-col items-center justify-center px-6 py-5">
 
-                        <h1 className="text-xs sm:text-2xl mb-5 text-center font-light tracking-wide">
+                        <h1 className="text-xs sm:text-xl mb-5 text-center font-light tracking-wide">
                             Welcome to My Heart
                         </h1>
 
@@ -161,7 +161,7 @@ export default function HeartDashboard({ openSection, exit }) {
                                     onClick={() => openSection(sec.id)}
                                     whileHover={{ scale: 1.05 }}
                                     whileTap={{ scale: 0.96 }}
-                                    className="py-2.5 rounded-full bg-white/10 hover:bg-white/20 border border-white/10 shadow-[0_0_18px_rgba(255,105,135,0.25)] text-[10px] sm:text-base backdrop-blur-md transition"
+                                    className="py-2.5 rounded-full bg-white/10 hover:bg-white/20 border border-white/10 shadow-[0_0_18px_rgba(255,105,135,0.25)] text-[10px] sm:text-base md:text-sm backdrop-blur-md transition"
                                 >
                                     {sec.name}
                                 </motion.button>
