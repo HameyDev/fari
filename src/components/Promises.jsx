@@ -134,7 +134,7 @@ export default function Promises({ next, back }) {
         />
 
         {/* Promises List */}
-        <div className="flex-1 overflow-y-auto pt-20 sm:pt-8 flex flex-col items-center  text-center p-4 sm:p-6 rounded-2xl bg-white/5 backdrop-blur-sm  shadow-[0_0_50px_rgba(255,105,135,0.25)] text-left text-rose-100">
+        <div className="flex-1 overflow-y-auto pt-16 sm:pt-8 flex flex-col items-center  text-center p-4 sm:p-6 rounded-2xl bg-white/5 backdrop-blur-sm  shadow-[0_0_50px_rgba(255,105,135,0.25)] text-left text-rose-100">
           {promises.map((text, i) => (
             <motion.p
               key={i}
