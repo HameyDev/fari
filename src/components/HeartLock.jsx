@@ -16,8 +16,8 @@ export default function HeartLock({ back, unlock }) {
   const [secretKey, setSecretKey] = useState("");
   const [error, setError] = useState("");
 
-  const correct = { q1: "laiba", q2: "black", q3: "november" };
-  const correctKey = "laiba";
+  const correct = { q1: "fariha", q2: "black", q3: "january" };
+  const correctKey = "fariha";
 
   const triggerConfetti = () => {
     confetti({

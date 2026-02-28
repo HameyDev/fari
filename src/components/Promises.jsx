@@ -90,7 +90,7 @@ export default function Promises({ next, back }) {
           My Promises To You
         </motion.h1>
         <div
-          className="absolute sm:ml-12 sm:mb-[90px] mb-[70px] ml-6 inset-0 z-50 bg-no-repeat"
+          className="absolute sm:ml-12 sm:mb-[90px] mb-[90px] ml-6 inset-0 z-50 bg-no-repeat"
           style={{
             backgroundImage: "url('/pic-4.png')",
             backgroundSize: isMobile ? "170px 280px" : "220px 325px",
@@ -112,7 +112,7 @@ export default function Promises({ next, back }) {
         />
 
         <div
-          className="absolute sm:mr-12 sm:mb-[90px] mb-[68px] mr-2 inset-0 z-50 bg-no-repeat"
+          className="absolute sm:mr-12 sm:mb-[90px] mb-[90px] mr-2 inset-0 z-50 bg-no-repeat"
           style={{
             backgroundImage: "url('/pic-5.png')",
             backgroundSize: isMobile ? "170px 277px" : "230px 325px",

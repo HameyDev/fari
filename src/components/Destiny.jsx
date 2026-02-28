@@ -2,74 +2,123 @@
 import { useMemo, useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
-export default function Destiny({ next, back }) {
-  const lines = [
-    "Some stories are written by time…",
-    "But ours is written by destiny",
-    "",
-    "I see a future where your hand is in mine 🤍",
-    "Where every sunrise begins with your smile ☀️",
-    "Where every night ends with peace in your presence 🌙",
-    "",
-    "Not just today…",
-    "Not just tomorrow…",
-    "But forever ❤️",
+export default function Destiny({ back }) {
+
+  /* ✅ Features With Image + Text */
+  const features = [
+    {
+      title: "Your Eyes 🤍",
+      image: "/eyes.png",
+      lines: [
+        "They don’t just look beautiful…",
+        "They feel deep and honest.",
+        "When you look at something, it feels like you mean it."
+      ]
+    },
+    {
+      title: "Your Lips 🌸",
+      image: "/lips.png",
+      lines: [
+        "Soft, natural, and full of quiet charm.",
+        "They speak emotions even when words are silent."
+      ]
+    },
+    {
+      title: "Your Smile 😊",
+      image: "/smile.png",
+      lines: [
+        "When you smile, your whole face changes.",
+        "It’s not just a smile — it’s a moment that makes everything around feel lighter."
+      ]
+    },
+    {
+      title: "Your Hair ✨",
+      image: "/hairs.png",
+      lines: [
+        "The way it falls naturally around your face…",
+        "It adds to your charm without even trying."
+      ]
+    },
+    {
+      title: "Your Dressing Style 👗",
+      image: "/dressing.png",
+      lines: [
+        "You carry simplicity with confidence.",
+        "It feels like you just own it."
+      ]
+    },
+    {
+      title: "Your Way of Talking 💬",
+      image: "/talk.png",
+      lines: [
+        "You speak casually but with meaning.",
+        "Conversations with you feel comfortable and real."
+      ]
+    },
+    {
+      title: "Your Voice 🎙",
+      image: "/voice.png",
+      lines: [
+        "It has this soft energy that stays in my mind long after I hear it.",
+        "It feels natural… not forced… just effortlessly cute."
+      ]
+    },
+    
   ];
 
-  const [displayedLines, setDisplayedLines] = useState([]);
-  const [isMobile, setIsMobile] = useState(false);
+  const [screenSize, setScreenSize] = useState({
+    width: 0,
+    height: 0,
+  });
+
+  /* ✅ Safe Screen Detection */
   useEffect(() => {
-    const check = () => setIsMobile(window.innerWidth < 640); // mobile < 640px
-    check();
-    window.addEventListener("resize", check);
-    return () => window.removeEventListener("resize", check);
+    const updateSize = () => {
+      setScreenSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    };
+
+    updateSize();
+    window.addEventListener("resize", updateSize);
+    return () => window.removeEventListener("resize", updateSize);
   }, []);
 
-  // Typewriter-like reveal for lines
-  useEffect(() => {
-    let i = 0;
-    const interval = setInterval(() => {
-      setDisplayedLines((prev) => [...prev, lines[i]]);
-      i++;
-      if (i >= lines.length) clearInterval(interval);
-    }, 700);
-    return () => clearInterval(interval);
-  }, []);
-
-  // Falling particles
+  /* ✅ Particles */
   const particles = useMemo(() => {
-    const arr = Array.from({ length: 50 }).map(() => ({
+    if (!screenSize.width) return [];
+
+    return Array.from({ length: 30 }).map(() => ({
       size: Math.random() * 4 + 2,
-      startX: Math.random() * window.innerWidth,
+      startX: Math.random() * screenSize.width,
       drift: (Math.random() - 0.5) * 80,
       duration: Math.random() * 5 + 6,
       delay: Math.random() * 5,
-      color: `rgba(255, ${Math.floor(100 + Math.random() * 155)}, ${Math.floor(
-        100 + Math.random() * 155
-      )}, ${0.6 + Math.random() * 0.4})`,
     }));
-    return arr;
-  }, []);
+  }, [screenSize.width]);
 
   return (
-    <div className="relative w-full h-screen flex items-center justify-center overflow-hidden text-white px-4 sm:px-6">
+    <div className="relative w-full h-screen flex items-center justify-center overflow-hidden text-white px-4">
 
-      {/* 🌌 Background */}
+      {/* Background */}
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: "url('/laiba-bg.jpg')" }}
       />
       <div className="absolute inset-0 bg-black/65 backdrop-blur-[2px]" />
 
-
-
-      {/* ✨ Falling Particles */}
-      <div className="absolute inset-0 z-20 z-0 overflow-hidden pointer-events-none">
+      {/* Particles */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {particles.map((p, i) => (
           <motion.span
             key={i}
             initial={{ y: -50, x: p.startX, opacity: 0 }}
-            animate={{ y: window.innerHeight + 50, x: p.startX + p.drift, opacity: [0, 1, 0] }}
+            animate={{
+              y: screenSize.height + 50,
+              x: p.startX + p.drift,
+              opacity: [0, 1, 0],
+            }}
             transition={{
               duration: p.duration,
               delay: p.delay,
@@ -79,120 +128,87 @@ export default function Destiny({ next, back }) {
             style={{
               width: p.size,
               height: p.size,
-              backgroundColor: p.color,
             }}
-            className="absolute rounded-full blur-[1.5px] shadow-[0_0_10px_rgba(255,120,150,0.5)]"
+            className="absolute rounded-full bg-rose-300/60 blur-[1.5px]"
           />
         ))}
       </div>
 
-      {/* 💌 Destiny Card */}
+      {/* Card */}
       <motion.div
-        key="destiny"
-        initial={{ opacity: 0, y: 30, scale: 0.96 }}
-        animate={{ opacity: 1, y: 0, scale: 1 }}
-        exit={{ opacity: 0 }}
-        transition={{ duration: 1.2, ease: "easeOut" }}
-        className="relative z-10 w-full max-w-[900px] h-[70vh] sm:h-[95vh] flex flex-col px-6 sm:px-10 py-6 sm:py-10 bg-white/5 backdrop-blur-md border border-white/10 rounded-3xl shadow-[0_0_80px_rgba(255,105,135,0.3)]"
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        className="relative z-10 w-full max-w-[900px] h-[95vh] flex flex-col px-6 py-8 bg-white/5 backdrop-blur-md border border-white/10 rounded-3xl shadow-[0_0_80px_rgba(255,105,135,0.3)]"
       >
+
         {/* Title */}
-        <motion.h1
-          initial={{ y: -20, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 1 }}
-          className="text-2xl sm:text-3xl font-light text-softpink drop-shadow-[0_0_15px_rgba(255,182,193,0.7)] text-center mb-6"
-        >
-          Our Destiny
-        </motion.h1>
+        <h1 className="text-2xl sm:text-3xl font-light text-center mb-6">
+          What Makes You Rare
+        </h1>
 
-        <div
-          className="absolute sm:ml-0 sm:mb-28 mb-[80px] ml-2 inset-0 z-50 bg-no-repeat"
-          style={{
-            backgroundImage: "url('/pic-6.png')",
-            backgroundSize: isMobile ? "120px 210px" : "210px 320px",
-            backgroundPosition: "bottom left",
-            // rose-400 glow from bottom
-            filter: "brightness(0.82) drop-shadow(0 15px 15px rgba(244, 114, 182, 0.1))", // subtle glow
-            borderRadius: "8px",
-          }}
-        />
-        <div
-          className="absolute sm:z-60 inset-0 z-19 bg-no-repeat"
-          style={{
-            backgroundImage: "url('/floor.png')",
-            backgroundSize: isMobile ? "180px 270px" : "280px 350px",
-            backgroundPosition: "bottom left",
-            borderRadius: "8px",
-            filter: "brightness(0.95) drop-shadow(0 30px 10px rgba(244, 114, 182, 0.18))",
-          }}
-        />
+        {/* Scrollable Features */}
+        <div className="flex-1 overflow-y-auto px-4">
 
-        <div
-          className="absolute sm:mr-6 sm:mb-[120px] mb-[85px] mr-6 inset-0 z-50 bg-no-repeat"
-          style={{
-            backgroundImage: "url('/pic-7.png')",
-            backgroundSize: isMobile ? "120px 180px" : "200px 290px",
-            backgroundPosition: "bottom right",
+          {features.map((feature, index) => (
+            <div key={index} className="mb-20 text-center">
 
-            filter: "brightness(0.82) drop-shadow(0 20px 15px rgba(244, 114, 182, 0.1))", // subtle glow
-            borderRadius: "8px",
-          }}
-        />
-        <div
-          className="absolute sm:z-49  inset-0 z-19 bg-no-repeat"
-          style={{
-            backgroundImage: "url('/floor.png')",
-            backgroundSize: isMobile ? "180px 250px" : "290px 320px",
-            backgroundPosition: "bottom right",
-            borderRadius: "8px",
-            filter: "brightness(0.85) drop-shadow(0 30px 10px rgba(244, 114, 182, 0.17))",
-          }}
-        />
+              {/* Image */}
+              <motion.img
+                src={feature.image}
+                alt={feature.title}
+                className="w-40 h-40 sm:w-48 sm:h-48 mx-auto rounded-3xl object-cover mb-6 shadow-xl border border-white/20"
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.6 }}
+              />
 
-        {/* Text Box */}
-        <div className="flex-1 overflow-y-auto p-4 sm:p-4 rounded-2xl bg-white/5 backdrop-blur-sm shadow-[0_0_50px_rgba(255,105,135,0.25)] text-left text-rose-100">
-          {displayedLines.map((line, i) => (
-            <motion.p
-              key={i}
-              initial={{ opacity: 0, y: 18 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              className="mb-3 text-xs sm:text-base md:text-sm leading-relaxed tracking-wide text-center"
-            >
-              {line || <span className="opacity-0">.</span>}
-            </motion.p>
+              {/* Title */}
+              <h2 className="text-xl font-semibold mb-4">
+                {feature.title}
+              </h2>
+
+              {/* Text */}
+              {feature.lines.map((line, i) => (
+                <motion.p
+                  key={i}
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.4 }}
+                  className="text-xs sm:text-base mb-2 text-rose-100"
+                >
+                  {line}
+                </motion.p>
+              ))}
+
+            </div>
           ))}
 
-          {/* Scrollbar */}
+          {/* Scrollbar Styling */}
           <style jsx>{`
             div::-webkit-scrollbar {
-              width: 8px;
-            }
-            div::-webkit-scrollbar-track {
-              background: transparent;
+              width: 6px;
             }
             div::-webkit-scrollbar-thumb {
               background: rgba(255, 105, 135, 0.8);
-              border-radius: 9999px;
-              box-shadow: 0 0 10px rgba(255, 105, 135, 0.5);
-            }
-            div::-webkit-scrollbar-thumb:hover {
-              background: rgba(255, 105, 135, 1);
+              border-radius: 999px;
             }
           `}</style>
+
         </div>
 
-        {/* Buttons */}
-        <div className="mt-4 sm:mt-6 flex flex-col sm:flex-row gap-3 w-full sm:w-[60%] mx-auto">
+        {/* Back Button */}
+        <div className="mt-4 flex justify-center">
           <motion.button
             onClick={back}
-            whileHover={{ scale: 1.03 }}
+            whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="w-full sm:w-full py-2.5 rounded-full bg-white/10 border border-white/20 text-white font-medium backdrop-blur-md hover:bg-white/20 transition text-sm sm:text-base"
+            className="px-8 py-2 rounded-full bg-white/15 border border-white/20 backdrop-blur-md hover:bg-white/25 transition text-sm"
           >
             Back
           </motion.button>
         </div>
+
       </motion.div>
     </div>
   );

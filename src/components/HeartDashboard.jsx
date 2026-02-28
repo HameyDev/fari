@@ -7,10 +7,10 @@ import { useMemo, useEffect, useState } from "react";
 
 export default function HeartDashboard({ openSection, exit }) {
     const sections = [
-        { name: "My Words For You", id: "loveLetter" },
-        { name: "Our Beautiful Memories", id: "memories" },
-        { name: "Promises I Made To You", id: "promises" },
-        { name: "Our Written Destiny", id: "destiny" },
+        { name: "A Small Message For You", id: "message" },
+        { name: "My Promises To You", id: "snap" },
+        { name: "What Makes You… You", id: "surprise" },
+        { name: "Just Something I Made", id: "details" },
     ];
     const [isMobile, setIsMobile] = useState(false);
 
@@ -47,10 +47,10 @@ export default function HeartDashboard({ openSection, exit }) {
                 style={{ backgroundImage: "url('/laiba-bg.jpg')" }}
             />
             <div
-                className="absolute sm:ml-12 mb-16 inset-0 z-20 bg-no-repeat"
+                className="absolute sm:ml-12 mb-6 inset-0 z-20 bg-no-repeat"
                 style={{
                     backgroundImage: "url('/pic.png')",
-                    backgroundSize: isMobile ? "180px 270px" : "270px 400px", // 📱 vs 💻
+                    backgroundSize: isMobile ? "170px 270px" : "270px 400px", // 📱 vs 💻
                     backgroundPosition: "bottom left",
                     filter:
                         "brightness(0.82) drop-shadow(0 15px 15px rgba(244, 114, 182, 0.1))",
@@ -82,7 +82,7 @@ export default function HeartDashboard({ openSection, exit }) {
                 className="absolute sm:mr-12 mb-4 sm:mb-0 inset-0 z-20 bg-no-repeat"
                 style={{
                     backgroundImage: "url('/pic-2.png')",
-                    backgroundSize: isMobile ? "197px 350px" : "300px 500px",
+                    backgroundSize: isMobile ? "150px 270px" : "300px 500px",
                     backgroundPosition: "bottom right",
 
                     filter: "brightness(0.82) drop-shadow(0 20px 15px rgba(244, 114, 182, 0.1))", // subtle glow
@@ -148,7 +148,7 @@ export default function HeartDashboard({ openSection, exit }) {
                     <FaHeart className="absolute text-[500px]  sm:text-[700px] text-rose-400/20 drop-shadow-[0_0_120px_rgba(255,120,150,0.25)]" />
 
                     {/* 💎 Glass Inner Area */}
-                    <div className="relative w-[50%] h-[65%] sm:w-[78%] sm:h-[82%] sm:mb-20 mb-8 rounded-3xl backdrop-blur-sm bg-white/5 border border-white/10 shadow-[0_0_80px_rgba(255,105,135,0.25)] flex flex-col items-center justify-center px-6 py-5">
+                    <div className="relative w-[50%] h-[70%] sm:w-[78%] sm:h-[82%] sm:mb-20 mb-8 rounded-3xl backdrop-blur-sm bg-white/5 border border-white/10 shadow-[0_0_80px_rgba(255,105,135,0.25)] flex flex-col items-center justify-center px-6 py-6">
 
                         <h1 className="text-xs sm:text-xl mb-5 text-center font-light tracking-wide">
                             Welcome to My Heart

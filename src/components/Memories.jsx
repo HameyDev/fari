@@ -5,10 +5,7 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 export default function Memories({ next, back }) {
   const sections = [
-    { id: "first", label: "First" },
-    { id: "cute", label: "Cute" },
     { id: "dream", label: "Dream" },
-    { id: "fav", label: "Fav" },
   ];
   const containerRef = useRef(null);
 
@@ -31,15 +28,13 @@ export default function Memories({ next, back }) {
       { src: "/memories/cute/1.jpeg", caption: "Sweet smile" },
     ],
     dream: [
-      { src: "/memories/dreams/1.jpeg", caption: "Putting in Hands" },
-      { src: "/memories/dreams/2.jpeg", caption: "Giving Flowers" },
-      { src: "/memories/dreams/10.jpeg", caption: "Kissing Hand" },
-      { src: "/memories/dreams/8.jpeg", caption: "Caring" },
-      { src: "/memories/dreams/3.jpeg", caption: "Promise" },
-      { src: "/memories/dreams/4.jpeg", caption: "My Love" },
-      { src: "/memories/dreams/5.jpeg", caption: "Holding Hand" },
-      { src: "/memories/dreams/6.jpeg", caption: "My Love" },
-      { src: "/memories/dreams/7.jpeg", caption: "Giving Flowers" },
+      { src: "/memories/dreams/1.jpeg", caption: "Holding Hand" },
+      { src: "/memories/dreams/2.jpeg", caption: "Kissing Her" },
+      { src: "/memories/dreams/3.jpeg", caption: "Kissing Hand" },
+      { src: "/memories/dreams/4.jpeg", caption: "Putting in Hands" },
+      { src: "/memories/dreams/5.jpeg", caption: "Giving Love Letter" },
+      { src: "/memories/dreams/6.jpeg", caption: "Proposing Her" },
+      { src: "/memories/dreams/7.jpeg", caption: "Caring" },
       
       
     ],
@@ -134,7 +129,7 @@ export default function Memories({ next, back }) {
 
         {/* Title */}
         <h1 className="text-xl sm:text-2xl font-light text-softpink drop-shadow-[0_0_15px_rgba(255,182,193,0.7)] text-center mb-2">
-          Our Memories
+          We Are Togetther
         </h1>
 
         {/* Sections */}

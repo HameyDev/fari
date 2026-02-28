@@ -33,10 +33,10 @@ export default function App() {
         {stage === 3 &&
           <HeartDashboard
             openSection={(id) => {
-              if (id === "loveLetter") setStage(4);
-              if (id === "memories") setStage(5);
-              if (id === "promises") setStage(6);
-              if (id === "destiny") setStage(7);
+              if (id === "message") setStage(4);
+              if (id === "details") setStage(5);
+              if (id === "snap") setStage(6);
+              if (id === "surprise") setStage(7);
             }}
             exit={() => setStage(2)}
           />

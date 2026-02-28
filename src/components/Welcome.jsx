@@ -96,7 +96,7 @@ export default function Welcome({ next }) {
                 {/* 🌹 Title */}
                 {/* 🌹 Name */}
                 <h1 className="text-4xl sm:text-4xl font-heading text-4xl font-light tracking-widest text-rose-200 drop-shadow-[0_0_25px_rgba(255,182,193,0.7)] mb-6">
-                    Happy Valentine's Day Laiba
+                    Welcome To My Life, Fariha
                 </h1>
 
                 {/* ✨ Typewriter */}
