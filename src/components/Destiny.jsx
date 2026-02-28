@@ -8,7 +8,7 @@ export default function Destiny({ back }) {
   const features = [
     {
       title: "Your Eyes 🤍",
-      image: "/eyes.png",
+      image: "/eye.jpeg",
       lines: [
         "They don’t just look beautiful…",
         "They feel deep and honest.",
@@ -17,7 +17,7 @@ export default function Destiny({ back }) {
     },
     {
       title: "Your Lips 🌸",
-      image: "/lips.png",
+      image: "/lip.jpeg",
       lines: [
         "Soft, natural, and full of quiet charm.",
         "They speak emotions even when words are silent."
@@ -25,7 +25,7 @@ export default function Destiny({ back }) {
     },
     {
       title: "Your Smile 😊",
-      image: "/smile.png",
+      image: "/smil.jpeg",
       lines: [
         "When you smile, your whole face changes.",
         "It’s not just a smile — it’s a moment that makes everything around feel lighter."
@@ -33,7 +33,7 @@ export default function Destiny({ back }) {
     },
     {
       title: "Your Hair ✨",
-      image: "/hairs.png",
+      image: "/hair.jpeg",
       lines: [
         "The way it falls naturally around your face…",
         "It adds to your charm without even trying."
@@ -41,7 +41,7 @@ export default function Destiny({ back }) {
     },
     {
       title: "Your Dressing Style 👗",
-      image: "/dressing.png",
+      image: "/dressin.jpeg",
       lines: [
         "You carry simplicity with confidence.",
         "It feels like you just own it."
@@ -49,7 +49,7 @@ export default function Destiny({ back }) {
     },
     {
       title: "Your Way of Talking 💬",
-      image: "/talk.png",
+      image: "/tal.jpeg",
       lines: [
         "You speak casually but with meaning.",
         "Conversations with you feel comfortable and real."
@@ -57,7 +57,7 @@ export default function Destiny({ back }) {
     },
     {
       title: "Your Voice 🎙",
-      image: "/voice.png",
+      image: "/voic.jpeg",
       lines: [
         "It has this soft energy that stays in my mind long after I hear it.",
         "It feels natural… not forced… just effortlessly cute."
