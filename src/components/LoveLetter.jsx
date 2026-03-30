@@ -118,7 +118,7 @@ And that’s rare.
         <div
           className="absolute sm:mr-24 mr-12 sm:mb-28 mb-20 inset-0 z-20 bg-no-repeat"
           style={{
-            backgroundImage: "url('/pic-3.png')",
+            backgroundImage: "url('/pic-3.PNG')",
             backgroundSize: isMobile ? "150px 240px" : "250px 400px",
             backgroundPosition: "bottom right",
 
