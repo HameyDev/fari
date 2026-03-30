@@ -49,7 +49,7 @@ export default function HeartDashboard({ openSection, exit }) {
             <div
                 className="absolute sm:ml-12 mb-6 inset-0 z-20 bg-no-repeat"
                 style={{
-                    backgroundImage: "url('/pic.png')",
+                    backgroundImage: "url('/pic.PNG')",
                     backgroundSize: isMobile ? "170px 270px" : "270px 400px", // 📱 vs 💻
                     backgroundPosition: "bottom left",
                     filter:
@@ -81,7 +81,7 @@ export default function HeartDashboard({ openSection, exit }) {
             <div
                 className="absolute sm:mr-12 mb-4 sm:mb-0 inset-0 z-20 bg-no-repeat"
                 style={{
-                    backgroundImage: "url('/pic-2.png')",
+                    backgroundImage: "url('/pic-2.PNG')",
                     backgroundSize: isMobile ? "150px 270px" : "300px 500px",
                     backgroundPosition: "bottom right",
 
