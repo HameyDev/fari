@@ -92,7 +92,7 @@ export default function Promises({ next, back }) {
         <div
           className="absolute sm:ml-12 sm:mb-[90px] mb-[90px] ml-6 inset-0 z-50 bg-no-repeat"
           style={{
-            backgroundImage: "url('/pic-4.png')",
+            backgroundImage: "url('/pic-4.PNG')",
             backgroundSize: isMobile ? "170px 280px" : "220px 325px",
             backgroundPosition: "bottom left",
             // rose-400 glow from bottom
@@ -114,7 +114,7 @@ export default function Promises({ next, back }) {
         <div
           className="absolute sm:mr-12 sm:mb-[90px] mb-[90px] mr-2 inset-0 z-50 bg-no-repeat"
           style={{
-            backgroundImage: "url('/pic-5.png')",
+            backgroundImage: "url('/pic-5.PNG')",
             backgroundSize: isMobile ? "170px 277px" : "230px 325px",
             backgroundPosition: "bottom right",
 
