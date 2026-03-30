@@ -29,12 +29,12 @@ export default function Memories({ next, back }) {
     ],
     dream: [
       { src: "/memories/dreamer/1.JPG", caption: "Holding Hand" },
-      { src: "/memories/dreamer/2.JPG", caption: "Kissing Her" },
+      { src: "/memories/dreamer/2.JPG", caption: "Proposing Her" },
       { src: "/memories/dreamer/3.JPG", caption: "Kissing Hand" },
-      { src: "/memories/dreamer/4.JPG", caption: "Putting in Hands" },
-      { src: "/memories/dreamer/5.JPG", caption: "Giving Love Letter" },
-      { src: "/memories/dreamer/6.JPG", caption: "Proposing Her" },
-      { src: "/memories/dreamer/7.JPG", caption: "Caring" },
+      { src: "/memories/dreamer/4.JPG", caption: "Giving Love Letter" },
+      { src: "/memories/dreamer/5.JPG", caption: "Holding in Hands" },
+      { src: "/memories/dreamer/6.JPG", caption: "Hugging Her" },
+      { src: "/memories/dreamer/7.JPG", caption: "Kussing Her" },
       
       
     ],
