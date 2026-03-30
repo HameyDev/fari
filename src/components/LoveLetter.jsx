@@ -7,7 +7,7 @@ export default function LoveLetter({ next, exit }) {
   const fullText = `Fariha…
 
 This might sound random…
-but I’m really glad you sent that snap that day.
+but I’m really glad you reacted to my story that day.
 
 It was just a normal reply,
 just a small moment,
