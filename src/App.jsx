@@ -41,8 +41,8 @@ export default function App() {
           />
         }
         {stage === 4 && <LoveLetter exit={() => setStage(3)} next={() => setStage(5)} />}
-        {stage === 5 && <Promises next={() => setStage(6)} back={() => setStage(3)} />}
-        {stage === 6 && <Destiny back={() => setStage(3)} />}
+        {stage === 5 && <Promises next={() => setStage(3)} back={() => setStage(3)} />}
+        {stage === 6 && <Destiny back={() => setStage(6)} />}
       </AnimatePresence>
 
     </div>
