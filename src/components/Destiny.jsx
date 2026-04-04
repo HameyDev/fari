@@ -8,7 +8,7 @@ export default function Destiny({ back }) {
   const features = [
     {
       title: "Your Eyes 🤍",
-      image: "/eyes.jpeg",
+      image: "/Eyee.jpeg",
       lines: [
         "They don’t just look beautiful…",
         "They feel deep and honest.",
@@ -17,7 +17,7 @@ export default function Destiny({ back }) {
     },
     {
       title: "Your Lips 🌸",
-      image: "/Lips.jpeg",
+      image: "/lipss.jpeg",
       lines: [
         "Soft, natural, and full of quiet charm.",
         "They speak emotions even when words are silent."
@@ -25,7 +25,7 @@ export default function Destiny({ back }) {
     },
     {
       title: "Your Smile 😊",
-      image: "/smile.jpeg",
+      image: "/smilee.jpeg",
       lines: [
         "When you smile, your whole face changes.",
         "It’s not just a smile — it’s a moment that makes everything around feel lighter."
@@ -33,7 +33,7 @@ export default function Destiny({ back }) {
     },
     {
       title: "Your Hair ✨",
-      image: "/hairs.jpeg",
+      image: "/hairss.jpeg",
       lines: [
         "The way it falls naturally around your face…",
         "It adds to your charm without even trying."
@@ -41,23 +41,23 @@ export default function Destiny({ back }) {
     },
     {
       title: "Your Dressing Style 👗",
-      image: "/dressing.jpeg",
+      image: "/dressingg.jpeg",
       lines: [
         "You carry simplicity with confidence.",
         "It feels like you just own it."
       ]
     },
     {
-      title: "Your Way of Talking 💬",
-      image: "/Talk.jpeg",
+      title: "Your Hands ✋",
+      image: "/Hands.jpeg",
       lines: [
-        "You speak casually but with meaning.",
-        "Conversations with you feel comfortable and real."
+       "Your hands show care, effort, and strength.",
+    "They feel like the kind of hands that make people feel safe and comfortable."
       ]
     },
     {
       title: "Your Voice 🎙",
-      image: "/voice.jpeg",
+      image: "/voicee.jpeg",
       lines: [
         "It has this soft energy that stays in my mind long after I hear it.",
         "It feels natural… not forced… just effortlessly cute."
