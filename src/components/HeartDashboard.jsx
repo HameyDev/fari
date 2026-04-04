@@ -8,9 +8,9 @@ import { useMemo, useEffect, useState } from "react";
 export default function HeartDashboard({ openSection, exit }) {
     const sections = [
         { name: "A Small Message For You", id: "message" },
-        { name: "My Promises To You", id: "snap" },
-        { name: "What Makes You… You", id: "surprise" },
-        { name: "Just Something I Made", id: "details" },
+        { name: "What makes You...You", id: "snap" },
+        // { name: "What Makes You… You", id: "surprise" },
+        { name: "My Promises To You", id: "details" },
     ];
     const [isMobile, setIsMobile] = useState(false);
 
