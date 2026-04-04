@@ -5,7 +5,6 @@ import MusicPlayer from "./components/MusicPlayer";
 import Welcome from "./components/Welcome";
 import HeartLock from "./components/HeartLock";
 import LoveLetter from "./components/LoveLetter";
-import Memories from "./components/Memories";
 import Promises from "./components/Promises";
 import Destiny from "./components/Destiny";
 import HeartDashboard from "./components/HeartDashboard";
@@ -42,9 +41,8 @@ export default function App() {
           />
         }
         {stage === 4 && <LoveLetter exit={() => setStage(3)} next={() => setStage(5)} />}
-        {stage === 5 && <Memories next={() => setStage(6)} back={() => setStage(3)} />}
-        {stage === 6 && <Promises next={() => setStage(7)} back={() => setStage(3)} />}
-        {stage === 7 && <Destiny back={() => setStage(3)} />}
+        {stage === 5 && <Promises next={() => setStage(6)} back={() => setStage(3)} />}
+        {stage === 6 && <Destiny back={() => setStage(3)} />}
       </AnimatePresence>
 
     </div>
