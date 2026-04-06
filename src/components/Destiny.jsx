@@ -8,7 +8,7 @@ export default function Destiny({ back }) {
   const features = [
     {
       title: "Your Eyes 🤍",
-      image: "/eyei.jpeg",
+      image: "/eyesi.jpeg",
       lines: [
         "They don’t just look beautiful…",
         "They feel deep and honest.",
@@ -49,7 +49,7 @@ export default function Destiny({ back }) {
     },
     {
       title: "Your Hands ✋",
-      image: "/Handsi.jpeg",
+      image: "/handsi.jpeg",
       lines: [
        "Your hands show care, effort, and strength.",
     "They feel like the kind of hands that make people feel safe and comfortable."
