@@ -16,13 +16,13 @@ export default function Destiny({ back }) {
       ]
     },
     {
-      title: "Your Lips 🌸",
-      image: "/lipsi.jpeg",
-      lines: [
-        "Soft, natural, and full of quiet charm.",
-        "They speak emotions even when words are silent."
-      ]
-    },
+  title: "Your Payal 💫",
+  image: "/payal.jpeg",
+  lines: [
+    "The way your payal shines on your feet makes every step look so beautiful.",
+    "Its soft little sound feels cute, elegant, and impossible to forget."
+  ]
+},
     {
       title: "Your Smile 😊",
       image: "/hairsi.jpeg",
