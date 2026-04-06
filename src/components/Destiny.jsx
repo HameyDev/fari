@@ -25,7 +25,7 @@ export default function Destiny({ back }) {
     },
     {
       title: "Your Smile 😊",
-      image: "/smilei.jpeg",
+      image: "/hairsi.jpeg",
       lines: [
         "When you smile, your whole face changes.",
         "It’s not just a smile — it’s a moment that makes everything around feel lighter."
