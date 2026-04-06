@@ -157,7 +157,7 @@ export default function Destiny({ back }) {
               <motion.img
                 src={feature.image}
                 alt={feature.title}
-                className="w-40 h-40 sm:w-48 sm:h-48 mx-auto rounded-3xl object-cover mb-6 shadow-xl border border-white/20"
+                className="w-70 h-40 sm:w-48 sm:h-48 mx-auto rounded-3xl object-cover mb-6 shadow-xl border border-white/20"
                 initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6 }}
