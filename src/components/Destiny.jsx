@@ -57,7 +57,7 @@ export default function Destiny({ back }) {
     },
     {
   title: "Your Eyelashes ✨",
-  image: "/eyelashesi.jpeg",
+  image: "/eyesi.jpeg",
   lines: [
     "They are so soft and pretty that I could stare at them forever.",
     "They make your eyes look even more beautiful without even trying."
