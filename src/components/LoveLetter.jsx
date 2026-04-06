@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 import { FaEnvelope } from "react-icons/fa";
 
 export default function LoveLetter({ next, exit }) {
-  const fullText = `Sonia…
+  const fullText = `Esha…
 
 This might sound random…
-but I’m really glad you text me that day.
+but I’m really glad you replied me that day.
 
 It was just a normal reply,
 just a small moment,
