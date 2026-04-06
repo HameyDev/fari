@@ -56,13 +56,13 @@ export default function Destiny({ back }) {
       ]
     },
     {
-      title: "Your Voice 🎙",
-      image: "/voicei.jpeg",
-      lines: [
-        "It has this soft energy that stays in my mind long after I hear it.",
-        "It feels natural… not forced… just effortlessly cute."
-      ]
-    },
+  title: "Your Eyelashes ✨",
+  image: "/eyelashesi.jpeg",
+  lines: [
+    "They are so soft and pretty that I could stare at them forever.",
+    "They make your eyes look even more beautiful without even trying."
+  ]
+},
     
   ];
 
