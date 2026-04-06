@@ -8,7 +8,7 @@ export default function Destiny({ back }) {
   const features = [
     {
       title: "Your Eyes 🤍",
-      image: "/Eyee.jpeg",
+      image: "/eyei.jpeg",
       lines: [
         "They don’t just look beautiful…",
         "They feel deep and honest.",
@@ -17,7 +17,7 @@ export default function Destiny({ back }) {
     },
     {
       title: "Your Lips 🌸",
-      image: "/lipss.jpeg",
+      image: "/lipsi.jpeg",
       lines: [
         "Soft, natural, and full of quiet charm.",
         "They speak emotions even when words are silent."
@@ -25,7 +25,7 @@ export default function Destiny({ back }) {
     },
     {
       title: "Your Smile 😊",
-      image: "/smilee.jpeg",
+      image: "/smilei.jpeg",
       lines: [
         "When you smile, your whole face changes.",
         "It’s not just a smile — it’s a moment that makes everything around feel lighter."
@@ -33,7 +33,7 @@ export default function Destiny({ back }) {
     },
     {
       title: "Your Hair ✨",
-      image: "/hairss.jpeg",
+      image: "/hairsi.jpeg",
       lines: [
         "The way it falls naturally around your face…",
         "It adds to your charm without even trying."
@@ -41,7 +41,7 @@ export default function Destiny({ back }) {
     },
     {
       title: "Your Dressing Style 👗",
-      image: "/dressingg.jpeg",
+      image: "/dressingi.jpeg",
       lines: [
         "You carry simplicity with confidence.",
         "It feels like you just own it."
@@ -49,7 +49,7 @@ export default function Destiny({ back }) {
     },
     {
       title: "Your Hands ✋",
-      image: "/Hands.jpeg",
+      image: "/Handsi.jpeg",
       lines: [
        "Your hands show care, effort, and strength.",
     "They feel like the kind of hands that make people feel safe and comfortable."
@@ -57,7 +57,7 @@ export default function Destiny({ back }) {
     },
     {
       title: "Your Voice 🎙",
-      image: "/voicee.jpeg",
+      image: "/voicei.jpeg",
       lines: [
         "It has this soft energy that stays in my mind long after I hear it.",
         "It feels natural… not forced… just effortlessly cute."
