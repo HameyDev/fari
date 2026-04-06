@@ -16,8 +16,16 @@ export default function Destiny({ back }) {
       ]
     },
     {
+      title: "Your Hands ✋",
+      image: "/handsi.jpeg",
+      lines: [
+       "Your hands show care, effort, and strength.",
+    "They feel like the kind of hands that make people feel safe and comfortable."
+      ]
+    },
+    {
   title: "Your Payal 💫",
-  image: "/payal.jpeg",
+  image: "/payal.jpg",
   lines: [
     "The way your payal shines on your feet makes every step look so beautiful.",
     "Its soft little sound feels cute, elegant, and impossible to forget."
@@ -45,14 +53,6 @@ export default function Destiny({ back }) {
       lines: [
         "You carry simplicity with confidence.",
         "It feels like you just own it."
-      ]
-    },
-    {
-      title: "Your Hands ✋",
-      image: "/handsi.jpeg",
-      lines: [
-       "Your hands show care, effort, and strength.",
-    "They feel like the kind of hands that make people feel safe and comfortable."
       ]
     },
     {
