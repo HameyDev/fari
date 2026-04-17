@@ -8,7 +8,7 @@ export default function Destiny({ back }) {
   const features = [
     {
       title: "Your Eyes 🤍",
-      image: "/eyesi.jpeg",
+      image: "/eyesf.jpeg",
       lines: [
         "They don’t just look beautiful…",
         "They feel deep and honest.",
@@ -16,24 +16,24 @@ export default function Destiny({ back }) {
       ]
     },
     {
-      title: "Your Hands ✋",
-      image: "/handsi.jpeg",
-      lines: [
-       "Your hands show care, effort, and strength.",
-    "They feel like the kind of hands that make people feel safe and comfortable."
-      ]
-    },
-    {
-  title: "Your Payal 💫",
-  image: "/payal.jpg",
+  title: "Your Lips 💋",
+  image: "/lipsf.jpeg",
   lines: [
-    "The way your payal shines on your feet makes every step look so beautiful.",
-    "Its soft little sound feels cute, elegant, and impossible to forget."
+    "Your lips show warmth, softness, and expression.",
+    "They feel like the kind of lips that speak comfort and leave a lasting impression."
+  ]
+},
+   {
+  title: "Your Mole Near Lips ✨",
+  image: "/mole.jpg",
+  lines: [
+    "That tiny mole near your lips adds a unique charm to your beauty.",
+    "It feels like a small detail that makes your smile even more unforgettable."
   ]
 },
     {
       title: "Your Smile 😊",
-      image: "/hairsi.jpeg",
+      image: "/smilef.jpeg",
       lines: [
         "When you smile, your whole face changes.",
         "It’s not just a smile — it’s a moment that makes everything around feel lighter."
@@ -41,7 +41,7 @@ export default function Destiny({ back }) {
     },
     {
       title: "Your Hair ✨",
-      image: "/hairsi.jpeg",
+      image: "/hairsf.jpeg",
       lines: [
         "The way it falls naturally around your face…",
         "It adds to your charm without even trying."
@@ -49,7 +49,7 @@ export default function Destiny({ back }) {
     },
     {
       title: "Your Dressing Style 👗",
-      image: "/dressingi.jpeg",
+      image: "/dressingf.jpeg",
       lines: [
         "You carry simplicity with confidence.",
         "It feels like you just own it."
@@ -57,7 +57,7 @@ export default function Destiny({ back }) {
     },
     {
   title: "Your Eyelashes ✨",
-  image: "/eyesi.jpeg",
+  image: "/eyesf.jpeg",
   lines: [
     "They are so soft and pretty that I could stare at them forever.",
     "They make your eyes look even more beautiful without even trying."
