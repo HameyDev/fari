@@ -17,7 +17,7 @@ export default function Destiny({ back }) {
     },
     {
   title: "Your Lips 💋",
-  image: "/lipsf.jpeg",
+  image: "/lipsf.jpg",
   lines: [
     "Your lips show warmth, softness, and expression.",
     "They feel like the kind of lips that speak comfort and leave a lasting impression."
@@ -25,7 +25,7 @@ export default function Destiny({ back }) {
 },
    {
   title: "Your Mole Near Lips ✨",
-  image: "/mole.jpg",
+  image: "/mole.jpeg",
   lines: [
     "That tiny mole near your lips adds a unique charm to your beauty.",
     "It feels like a small detail that makes your smile even more unforgettable."
@@ -41,7 +41,7 @@ export default function Destiny({ back }) {
     },
     {
       title: "Your Hair ✨",
-      image: "/hairsf.jpeg",
+      image: "/hairsf.jpg",
       lines: [
         "The way it falls naturally around your face…",
         "It adds to your charm without even trying."
@@ -49,7 +49,7 @@ export default function Destiny({ back }) {
     },
     {
       title: "Your Dressing Style 👗",
-      image: "/dressingf.jpeg",
+      image: "/dressingf.jpg",
       lines: [
         "You carry simplicity with confidence.",
         "It feels like you just own it."
